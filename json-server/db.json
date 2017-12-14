@@ -1,0 +1,1620 @@
+{
+  "info": {
+    "name": "muses",
+    "version": "1.0.0",
+    "description": "Muse Karaoke",
+    "hostname": "localhost",
+    "node_version": "7.10.0",
+    "node_environment": "dev",
+    "database_adapter": "PostgreSQL"
+  },
+  "token": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTM0Nzk4ODAsInN1YiI6MX0.zzUP-jvWM-_lhhoXt5Jfgd-fjA-JgxC5iYMriBgpgv4"
+  },
+  "user": {
+    "email": "admin@musesny.com",
+    "name": "Milo Kang",
+    "profile_image": "/images/user.jpg"
+  },
+  "attributes": [
+    { "id": 1, "name": "Default", "description": "default attribute" },
+    { "id": 2, "name": "Color", "description": "color attribute" },
+    { "id": 3, "name": "Size", "description": "size attribute" },
+    { "id": 4, "name": "Flavor", "description": "flavor attribute" }
+  ],
+  "attribute_values": [
+    { "id": 1, "name": null, "description": null, "attributeId": 1 },
+    { "id": 2, "name": "Black", "description": "black color", "attributeId": 2 },
+    { "id": 3, "name": "Blue", "description": "blue color", "attributeId": 2 },
+    { "id": 4, "name": "Red", "description": "red color", "attributeId": 2 },
+    { "id": 5, "name": "Pint", "description": "pint size", "attributeId": 3 },
+    { "id": 6, "name": "Shot", "description": "shot size", "attributeId": 3 },
+    { "id": 7, "name": "Glass", "description": "glass size", "attributeId": 3 },
+    { "id": 8, "name": "Bottle", "description": "bottle size", "attributeId": 3 },
+    { "id": 9, "name": "Pitcher", "description": "pitcher size", "attributeId": 3 },
+    { "id": 10, "name": "Lychee", "description": "lychee flavor", "attributeId": 4 },
+    { "id": 11, "name": "Yogurt", "description": "yogurt flavor", "attributeId": 4 },
+    { "id": 12, "name": "Mango", "description": "margo flavor", "attributeId": 4 },
+    { "id": 13, "name": "Carafe", "description": "carafe size", "attributeId": 3 }
+  ],
+  "product_types": [
+    {"id":1,"name":"Food","description":"Category for food menu","parentId":null,"order":1},
+    {"id":2,"name":"Drinks","description":"Category for drinks menu","parentId":null,"order":2},
+    {"id":3,"name":"Packages","description":"Category for grouped menu","parentId":null,"order":3},
+    {"id":4,"name":"Cocktail","description":"Cocktail menu","parentId":2,"order":1},
+    {"id":5,"name":"Beer","description":"Beer menu","parentId":2,"order":2},
+    {"id":6,"name":"Soju","description":"Soju menu","parentId":2,"order":3},
+    {"id":7,"name":"Appetizers","description":"Appetizers menu","parentId":1,"order":1},
+    {"id":8,"name":"Snacks","description":"Finger foods","parentId":1,"order":2},
+    {"id":9,"name":"Soft Drink","description":"soft drinks menu","parentId":2,"order":10},
+    {"id":10,"name":"Room","description":"Rooms","parentId":null,"order":4},
+    {"id":11,"name":"Sprits","description":"Whiskey menu","parentId":2,"order":4},
+    {"id":12,"name":"Whiskey","description":"Whiskey","parentId":11,"order":1},
+    {"id":13,"name":"Single Malt","description":"Single Malt","parentId":11,"order":2}
+  ],
+  "product_type_attribute_values": [
+    {"productTypeId":5,"attributeValueId":5},
+    {"productTypeId":5,"attributeValueId":8},
+    {"productTypeId":5,"attributeValueId":9},
+    {"productTypeId":5,"attributeValueId":10},
+    {"productTypeId":6,"attributeValueId":8},
+    {"productTypeId":6,"attributeValueId":9},
+    {"productTypeId":6,"attributeValueId":13},
+    {"productTypeId":12,"attributeValueId":6},
+    {"productTypeId":12,"attributeValueId":7},
+    {"productTypeId":13,"attributeValueId":6},
+    {"productTypeId":13,"attributeValueId":7}
+  ],
+  "product_attribute_values": [
+    {"productId":1,"attributeValueId":1},
+    {"productId":2,"attributeValueId":1},
+    {"productId":3,"attributeValueId":1},
+    {"productId":4,"attributeValueId":1},
+    {"productId":5,"attributeValueId":5},
+    {"productId":5,"attributeValueId":9},
+    {"productId":6,"attributeValueId":5},
+    {"productId":6,"attributeValueId":9},
+    {"productId":7,"attributeValueId":5},
+    {"productId":7,"attributeValueId":9},
+    {"productId":8,"attributeValueId":5},
+    {"productId":8,"attributeValueId":9},
+    {"productId":9,"attributeValueId":5},
+    {"productId":9,"attributeValueId":9},
+    {"productId":10,"attributeValueId":5},
+    {"productId":10,"attributeValueId":9},
+    {"productId":11,"attributeValueId":5},
+    {"productId":11,"attributeValueId":9},
+    {"productId":12,"attributeValueId":5},
+    {"productId":12,"attributeValueId":9},
+    {"productId":13,"attributeValueId":5},
+    {"productId":13,"attributeValueId":9},
+    {"productId":14,"attributeValueId":8},
+    {"productId":15,"attributeValueId":9},
+    {"productId":15,"attributeValueId":13},
+    {"productId":16,"attributeValueId":1},
+    {"productId":17,"attributeValueId":1},
+    {"productId":18,"attributeValueId":1},
+    {"productId":19,"attributeValueId":1},
+    {"productId":20,"attributeValueId":6},
+    {"productId":20,"attributeValueId":7},
+    {"productId":21,"attributeValueId":6},
+    {"productId":21,"attributeValueId":7},
+    {"productId":22,"attributeValueId":6},
+    {"productId":22,"attributeValueId":7},
+    {"productId":23,"attributeValueId":6},
+    {"productId":23,"attributeValueId":7},
+    {"productId":24,"attributeValueId":6},
+    {"productId":24,"attributeValueId":7},
+    {"productId":25,"attributeValueId":6},
+    {"productId":25,"attributeValueId":7},
+    {"productId":26,"attributeValueId":6},
+    {"productId":26,"attributeValueId":7}
+  ],
+  "products_sku": [
+    {"id":1,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":1,"attributeId":1,"creationDate":"2017-11-09 03:13:00.158-05","updateOn":"2017-11-09 03:13:00.158-05"},
+    {"id":2,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":2,"attributeId":1,"creationDate":"2017-11-09 03:13:00.158-05","updateOn":"2017-11-09 03:13:00.158-05"},
+    {"id":3,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":3,"attributeId":1,"creationDate":"2017-11-09 03:13:00.159-05","updateOn":"2017-11-09 03:13:00.159-05"},
+    {"id":4,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":4,"attributeId":1,"creationDate":"2017-11-09 03:13:00.16-05","updateOn":"2017-11-09 03:13:00.16-05"},
+    {"id":5,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":5,"attributeId":5,"creationDate":"2017-11-09 03:13:00.161-05","updateOn":"2017-11-09 03:13:00.161-05"},
+    {"id":6,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":5,"attributeId":9,"creationDate":"2017-11-09 03:13:00.161-05","updateOn":"2017-11-09 03:13:00.161-05"},
+    {"id":7,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":6,"attributeId":5,"creationDate":"2017-11-09 03:13:00.161-05","updateOn":"2017-11-09 03:13:00.161-05"},
+    {"id":8,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":6,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":9,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":7,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":10,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":7,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":11,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":8,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":12,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":8,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":13,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":9,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":14,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":9,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":15,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":10,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":16,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":10,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":17,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":11,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":18,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":11,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":19,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":12,"attributeId":5,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":20,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":12,"attributeId":9,"creationDate":"2017-11-09 03:13:00.162-05","updateOn":"2017-11-09 03:13:00.162-05"},
+    {"id":21,"sku":null,"price":7,"isActive":true,"quantity":0,"trackStock":false,"productId":13,"attributeId":5,"creationDate":"2017-11-09 03:13:00.163-05","updateOn":"2017-11-09 03:13:00.163-05"},
+    {"id":22,"sku":null,"price":25,"isActive":true,"quantity":0,"trackStock":false,"productId":13,"attributeId":9,"creationDate":"2017-11-09 03:13:00.163-05","updateOn":"2017-11-09 03:13:00.163-05"},
+    {"id":23,"sku":null,"price":25,"isActive":true,"quantity":40,"trackStock":true,"productId":14,"attributeId":8,"creationDate":"2017-11-09 03:13:00.163-05","updateOn":"2017-11-09 03:13:00.163-05"},
+    {"id":24,"sku":null,"price":30,"isActive":true,"quantity":0,"trackStock":false,"productId":15,"attributeId":13,"creationDate":"2017-11-09 03:13:00.163-05","updateOn":"2017-11-09 03:13:00.163-05"},
+    {"id":25,"sku":null,"price":45,"isActive":true,"quantity":0,"trackStock":false,"productId":15,"attributeId":9,"creationDate":"2017-11-09 03:13:00.163-05","updateOn":"2017-11-09 03:13:00.163-05"},
+    {"id":26,"sku":null,"price":4,"isActive":true,"quantity":0,"trackStock":false,"productId":16,"attributeId":1,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":27,"sku":null,"price":4,"isActive":true,"quantity":0,"trackStock":false,"productId":17,"attributeId":1,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":28,"sku":null,"price":4,"isActive":true,"quantity":0,"trackStock":false,"productId":18,"attributeId":1,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":29,"sku":null,"price":4,"isActive":true,"quantity":0,"trackStock":false,"productId":19,"attributeId":1,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":30,"sku":null,"price":8,"isActive":true,"quantity":0,"trackStock":false,"productId":20,"attributeId":6,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":31,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":20,"attributeId":7,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":32,"sku":null,"price":8,"isActive":true,"quantity":0,"trackStock":false,"productId":21,"attributeId":6,"creationDate":"2017-11-09 03:13:00.164-05","updateOn":"2017-11-09 03:13:00.164-05"},
+    {"id":33,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":21,"attributeId":7,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":34,"sku":null,"price":9,"isActive":true,"quantity":0,"trackStock":false,"productId":22,"attributeId":6,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":35,"sku":null,"price":16,"isActive":true,"quantity":0,"trackStock":false,"productId":22,"attributeId":7,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":36,"sku":null,"price":22,"isActive":true,"quantity":0,"trackStock":false,"productId":23,"attributeId":6,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":37,"sku":null,"price":40,"isActive":true,"quantity":0,"trackStock":false,"productId":23,"attributeId":7,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":38,"sku":null,"price":8,"isActive":true,"quantity":0,"trackStock":false,"productId":24,"attributeId":6,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":39,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":24,"attributeId":7,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":40,"sku":null,"price":8,"isActive":true,"quantity":0,"trackStock":false,"productId":25,"attributeId":6,"creationDate":"2017-11-09 03:13:00.165-05","updateOn":"2017-11-09 03:13:00.165-05"},
+    {"id":41,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":25,"attributeId":7,"creationDate":"2017-11-09 03:13:00.166-05","updateOn":"2017-11-09 03:13:00.166-05"},
+    {"id":42,"sku":null,"price":8,"isActive":true,"quantity":0,"trackStock":false,"productId":26,"attributeId":6,"creationDate":"2017-11-09 03:13:00.166-05","updateOn":"2017-11-09 03:13:00.166-05"},
+    {"id":43,"sku":null,"price":14,"isActive":true,"quantity":0,"trackStock":false,"productId":26,"attributeId":7,"creationDate":"2017-11-09 03:13:00.166-05","updateOn":"2017-11-09 03:13:00.166-05"}
+  ],
+  "products": [
+    {"id":1,"name":"Cocktail 1","description":"Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice","isActive":true,"productTypeId":4,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":2,"name":"Cocktail 2","description":"Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice","isActive":false,"productTypeId":4,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":3,"name":"Cocktail 3","description":"Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice","isActive":true,"productTypeId":4,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":4,"name":"Cocktail 4","description":"Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice","isActive":true,"productTypeId":4,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":5,"name":"Heineken","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":6,"name":"Bud Light","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.096-05","updatedOn":"2017-11-09 03:13:00.096-05"},
+    {"id":7,"name":"Cools Light","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":8,"name":"Amstel Light","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":9,"name":"Blue Moon","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":10,"name":"Corona","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":11,"name":"Stella","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":12,"name":"Sapporo","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":13,"name":"Asahi","description":"","isActive":true,"productTypeId":5,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":14,"name":"Chamisul Fresh","description":"","isActive":true,"productTypeId":6,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":15,"name":"Soju Cocktail","description":"Lychee, Yogurt, Strawberry, Mango, Lemon, Peach, Apple","isActive":true,"productTypeId":6,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":16,"name":"Water","description":"","isActive":true,"productTypeId":9,"creationDate":"2017-11-09 03:13:00.097-05","updatedOn":"2017-11-09 03:13:00.097-05"},
+    {"id":17,"name":"Cranberry Juice","description":"","isActive":true,"productTypeId":9,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":18,"name":"Sprite","description":"","isActive":true,"productTypeId":9,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":19,"name":"Ginger Ale","description":"","isActive":true,"productTypeId":9,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":20,"name":"Ballantine 12 yr","description":"","isActive":true,"productTypeId":12,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":21,"name":"Chivas 12 yr","description":"","isActive":true,"productTypeId":12,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":22,"name":"Johnnie Walker Black","description":"","isActive":true,"productTypeId":12,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":23,"name":"Johnnie Walker Blue","description":"","isActive":true,"productTypeId":12,"creationDate":"2017-11-09 03:13:00.098-05","updatedOn":"2017-11-09 03:13:00.098-05"},
+    {"id":24,"name":"Glenmorangie 10 yr","description":"","isActive":true,"productTypeId":13,"creationDate":"2017-11-09 03:13:00.099-05","updatedOn":"2017-11-09 03:13:00.099-05"},
+    {"id":25,"name":"Glenfiddich 12 yr","description":"","isActive":false,"productTypeId":13,"creationDate":"2017-11-09 03:13:00.099-05","updatedOn":"2017-11-09 03:13:00.099-05"},
+    {"id":26,"name":"Glenlivet 12 yr","description":"","isActive":true,"productTypeId":13,"creationDate":"2017-11-09 03:13:00.099-05","updatedOn":"2017-11-09 03:13:00.099-05"},
+    {"id":30,"name":"Glenlivet 12 yr","description":"","isActive":true,"productTypeId":13,"creationDate":"2017-11-09 09:40:37.19-05","updatedOn":"2017-11-09 09:40:37.19-05"}
+  ],
+  "products_api": [
+    {
+      "id": 1,
+      "name": "Cocktail 1",
+      "description": "Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice",
+      "isActive": true,
+      "productTypeId": 4,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 1,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 4,
+        "name": "Cocktail",
+        "description": "Cocktail menu",
+        "parentId": 2,
+        "order": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cocktail 2",
+      "description": "Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice",
+      "isActive": false,
+      "productTypeId": 4,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 2,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 4,
+        "name": "Cocktail",
+        "description": "Cocktail menu",
+        "parentId": 2,
+        "order": 1
+      }
+    },
+    {
+      "id": 3,
+      "name": "Cocktail 3",
+      "description": "Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice",
+      "isActive": true,
+      "productTypeId": 4,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 3,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 4,
+        "name": "Cocktail",
+        "description": "Cocktail menu",
+        "parentId": 2,
+        "order": 1
+      }
+    },
+    {
+      "id": 4,
+      "name": "Cocktail 4",
+      "description": "Stoli Vodka, Lychee, Lemon, Cranberry Juice, Orange Juice",
+      "isActive": true,
+      "productTypeId": 4,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 4,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 4,
+        "name": "Cocktail",
+        "description": "Cocktail menu",
+        "parentId": 2,
+        "order": 1
+      }
+    },
+    {
+      "id": 5,
+      "name": "Heineken",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 5,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 5,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 6,
+      "name": "Bud Light",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.096Z",
+      "updatedOn": "2017-11-09T08:13:00.096Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 6,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 6,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 7,
+      "name": "Cools Light",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 7,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 7,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 8,
+      "name": "Amstel Light",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 8,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 8,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 9,
+      "name": "Blue Moon",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 9,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 9,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 10,
+      "name": "Corona",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 10,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 10,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 11,
+      "name": "Stella",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 11,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 11,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 12,
+      "name": "Sapporo",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 12,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 12,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 13,
+      "name": "Asahi",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 5,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 5,
+          "name": "Pint",
+          "description": "pint size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 13,
+            "attributeValueId": 5
+          },
+          "productSKU": {
+            "id": 21,
+            "sku": null,
+            "price": 7,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 13,
+            "attributeValueId": 5,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 13,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 5,
+        "name": "Beer",
+        "description": "Beer menu",
+        "parentId": 2,
+        "order": 2
+      }
+    },
+    {
+      "id": 14,
+      "name": "Chamisul Fresh",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 6,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 8,
+          "name": "Bottle",
+          "description": "bottle",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 14,
+            "attributeValueId": 8
+          },
+          "productSKU": {
+            "id": 23,
+            "sku": null,
+            "price": 25,
+            "isActive": true,
+            "quantity": 40,
+            "trackStock": true,
+            "productId": 14,
+            "attributeValueId": 8,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 6,
+        "name": "Soju",
+        "description": "Soju menu",
+        "parentId": 2,
+        "order": 3
+      }
+    },
+    {
+      "id": 15,
+      "name": "Soju Cocktail",
+      "description": "Lychee, Yogurt, Strawberry, Mango, Lemon, Peach, Apple",
+      "isActive": true,
+      "productTypeId": 6,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 13,
+          "name": "Carafe",
+          "description": "Carafe size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 15,
+            "attributeValueId": 13
+          },
+          "productSKU": {
+            "id": 24,
+            "sku": null,
+            "price": 30,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 13,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        },
+        {
+          "id": 9,
+          "name": "Pitcher",
+          "description": "pitcher size",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 15,
+            "attributeValueId": 9
+          },
+          "productSKU": {
+            "id": 25,
+            "sku": null,
+            "price": 45,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 15,
+            "attributeValueId": 9,
+            "creationDate": "2017-11-09T08:13:00.163Z",
+            "updatedOn": "2017-11-09T08:13:00.163Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 6,
+        "name": "Soju",
+        "description": "Soju menu",
+        "parentId": 2,
+        "order": 3
+      }
+    },
+    {
+      "id": 16,
+      "name": "Water",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 9,
+      "creationDate": "2017-11-09T08:13:00.097Z",
+      "updatedOn": "2017-11-09T08:13:00.097Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 16,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 9,
+        "name": "Soft Drink",
+        "description": "soft drinks menu",
+        "parentId": 2,
+        "order": 10
+      }
+    },
+    {
+      "id": 17,
+      "name": "Cranberry Juice",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 9,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 17,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 9,
+        "name": "Soft Drink",
+        "description": "soft drinks menu",
+        "parentId": 2,
+        "order": 10
+      }
+    },
+    {
+      "id": 18,
+      "name": "Sprite",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 9,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 18,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 9,
+        "name": "Soft Drink",
+        "description": "soft drinks menu",
+        "parentId": 2,
+        "order": 10
+      }
+    },
+    {
+      "id": 19,
+      "name": "Ginger Ale",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 9,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 1,
+          "name": null,
+          "description": null,
+          "attributeId": 1,
+          "ProductAttributeValues": {
+            "productId": 19,
+            "attributeValueId": 1
+          },
+          "productSKU": {
+            "id": 29,
+            "sku": null,
+            "price": 4,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 19,
+            "attributeValueId": 1,
+            "creationDate": "2017-11-09T08:13:00.164Z",
+            "updatedOn": "2017-11-09T08:13:00.164Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 9,
+        "name": "Soft Drink",
+        "description": "soft drinks menu",
+        "parentId": 2,
+        "order": 10
+      }
+    },
+    {
+      "id": 20,
+      "name": "Ballantine 12 yr",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 12,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 20,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 20,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 12,
+        "name": "Whiskey",
+        "description": "Whiskey",
+        "parentId": 11,
+        "order": 1
+      }
+    },
+    {
+      "id": 21,
+      "name": "Chivas 12 yr",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 12,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 21,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 21,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 12,
+        "name": "Whiskey",
+        "description": "Whiskey",
+        "parentId": 11,
+        "order": 1
+      }
+    },
+    {
+      "id": 22,
+      "name": "Johnnie Walker Black",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 12,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 22,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 22,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 12,
+        "name": "Whiskey",
+        "description": "Whiskey",
+        "parentId": 11,
+        "order": 1
+      }
+    },
+    {
+      "id": 23,
+      "name": "Johnnie Walker Blue",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 12,
+      "creationDate": "2017-11-09T08:13:00.098Z",
+      "updatedOn": "2017-11-09T08:13:00.098Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 23,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 23,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 12,
+        "name": "Whiskey",
+        "description": "Whiskey",
+        "parentId": 11,
+        "order": 1
+      }
+    },
+    {
+      "id": 24,
+      "name": "Glenmorangie 10 yr",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 13,
+      "creationDate": "2017-11-09T08:13:00.099Z",
+      "updatedOn": "2017-11-09T08:13:00.099Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 24,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 24,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 13,
+        "name": "Single Malt",
+        "description": "Single Malt",
+        "parentId": 11,
+        "order": 2
+      }
+    },
+    {
+      "id": 25,
+      "name": "Glenfiddich 12 yr",
+      "description": null,
+      "isActive": false,
+      "productTypeId": 13,
+      "creationDate": "2017-11-09T08:13:00.099Z",
+      "updatedOn": "2017-11-09T08:13:00.099Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 25,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 25,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 13,
+        "name": "Single Malt",
+        "description": "Single Malt",
+        "parentId": 11,
+        "order": 2
+      }
+    },
+    {
+      "id": 26,
+      "name": "Glenlivet 12 yr",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 13,
+      "creationDate": "2017-11-09T08:13:00.099Z",
+      "updatedOn": "2017-11-09T08:13:00.099Z",
+      "attributeValues": [
+        {
+          "id": 6,
+          "name": "Shot",
+          "description": "shot",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 26,
+            "attributeValueId": 6
+          },
+          "productSKU": {
+            "id": 42,
+            "sku": null,
+            "price": 8,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 6,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass",
+          "description": "glass",
+          "attributeId": 3,
+          "ProductAttributeValues": {
+            "productId": 26,
+            "attributeValueId": 7
+          },
+          "productSKU": {
+            "id": 43,
+            "sku": null,
+            "price": 14,
+            "isActive": true,
+            "quantity": 0,
+            "trackStock": false,
+            "productId": 26,
+            "attributeValueId": 7,
+            "creationDate": "2017-11-09T08:13:00.166Z",
+            "updatedOn": "2017-11-09T08:13:00.166Z"
+          }
+        }
+      ],
+      "productType": {
+        "id": 13,
+        "name": "Single Malt",
+        "description": "Single Malt",
+        "parentId": 11,
+        "order": 2
+      }
+    },
+    {
+      "id": 30,
+      "name": "Glenlivet 12 yr",
+      "description": null,
+      "isActive": true,
+      "productTypeId": 13,
+      "creationDate": "2017-11-09T14:40:37.190Z",
+      "updatedOn": "2017-11-09T14:40:37.190Z",
+      "attributeValues": [],
+      "productType": {
+        "id": 13,
+        "name": "Single Malt",
+        "description": "Single Malt",
+        "parentId": 11,
+        "order": 2
+      }
+    }
+  ]
+}

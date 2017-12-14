@@ -1,0 +1,21 @@
+ms-products-list {
+  display: block;
+  > table {
+    width: 100%;
+    td, th {
+      vertical-align: middle !important;
+
+      > level {
+        margin-bottom: 0;
+      }
+    }
+  }
+  position: relative;
+  ms-sidebar {
+    height: 100%;
+    .sidebar-content > div {
+      background-color: transparent;
+    }
+  }
+}
+

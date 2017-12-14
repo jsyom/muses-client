@@ -1,0 +1,119 @@
+<ms-sidebar id="search-sidebar" side="left" class="is-minify" [isExpanded]="isSearchSidebarOpen"
+            [config]="{'expandedWidth': 400, 'minifiedWidth': 0}"
+            (expand)="handleSearchExpand($event)">
+  <div>SEARCH</div>
+  <ms-sidebar-close></ms-sidebar-close>
+</ms-sidebar>
+<ms-sidebar id="create-sidebar" side="left" class="is-minify" [isExpanded]="isCreateSidebarOpen"
+            [config]="{'expandedWidth': 400, 'minifiedWidth': 0}"
+            (expand)="handleCreateExpand($event)">
+  <div>Create New</div>
+  <ms-sidebar-close></ms-sidebar-close>
+</ms-sidebar>
+<ms-sidebar id="admin-sidebar" side="left" class="is-minify" [isExpanded]="true"
+            [config]="{'expandedWidth': 304}">
+  <div class="admin-side-toolbar">
+    <div>
+      <div class="action-tools">
+        <div>
+          <button class="button" routerLink="/home">
+            <span class="icon">
+              <i [ngClass]="['fa', 'fa-home']"></i>
+            </span>
+            <span class="tag is-black">homepage</span>
+          </button>
+        </div>
+        <div>
+          <button id="search-action-btn" class="button" (click)="toggleActionSidebar($event)">
+            <span class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="img" label="Search" aria-labelledby="title-q4ujxbv" style="height: 24px; max-height: 100%; max-width: 100%; overflow: hidden; vertical-align: bottom; width: 24px;"><title id="title-q4ujxbv">Search</title><path d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z" fill="currentColor" fill-rule="evenodd" role="presentation"></path></svg>
+            </span>
+            <span class="tag is-black">search</span>
+          </button>
+        </div>
+        <div>
+          <button id="create-action-btn" class="button" (click)="toggleActionSidebar($event)">
+            <span class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="img" label="Create" aria-labelledby="title-jbxu8gy" style="height: 24px; max-height: 100%; max-width: 100%; overflow: hidden; vertical-align: bottom; width: 24px;"><title id="title-jbxu8gy">Create</title><path d="M13 11V3.993A.997.997 0 0 0 12 3c-.556 0-1 .445-1 .993V11H3.993A.997.997 0 0 0 3 12c0 .557.445 1 .993 1H11v7.007c0 .548.448.993 1 .993.556 0 1-.445 1-.993V13h7.007A.997.997 0 0 0 21 12c0-.556-.445-1-.993-1H13z" fill="currentColor" fill-rule="evenodd" role="presentation"></path></svg>
+            </span>
+            <span class="tag is-black">create new</span>
+          </button>
+        </div>
+        <div *ngFor="let navGroup of sidebarNav">
+          <button class="button" [routerLink]="navGroup.path">
+            <span class="icon">
+              <i [ngClass]="['fa', 'fa-'+navGroup.icon]"></i>
+            </span>
+            <span class="tag is-black">{{navGroup.label}}</span>
+          </button>
+        </div>
+      </div>
+      <div class="user-tools">
+        <div>
+          <button class="button">
+                  <span class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="img" label="Help" aria-labelledby="title-6i04c01" style="height: 24px; max-height: 100%; max-width: 100%; overflow: hidden; vertical-align: bottom; width: 24px;"><title id="title-6i04c01">Help</title><g fill-rule="evenodd"><circle fill="currentColor" cx="12" cy="12" r="10" role="presentation"></circle><circle fill="inherit" cx="12" cy="18" r="1" role="presentation"></circle><path d="M15.89 9.05a3.975 3.975 0 0 0-2.957-2.942C10.321 5.514 8.017 7.446 8 9.95l.005.147a.992.992 0 0 0 .982.904c.552 0 1-.447 1.002-.998a2.004 2.004 0 0 1 4.007-.002c0 1.102-.898 2-2.003 2H12a1 1 0 0 0-1 .987v2.014a1.001 1.001 0 0 0 2.004 0v-.782c0-.217.145-.399.35-.472A3.99 3.99 0 0 0 15.89 9.05" fill="inherit" role="presentation"></path></g></svg>
+                  </span>
+          </button>
+        </div>
+        <div>
+          <ms-dropdown [id]="'user-dropdown'" class="is-up">
+            <ms-dropdown-trigger>
+                    <span class="icon">
+                      <span role="img"
+                            style="background-image: url(&quot;/account/Milokang/avatar/32/&quot;);">
+                      </span>
+                    </span>
+            </ms-dropdown-trigger>
+            <ms-dropdown-menu>
+              <a dropdown-item>
+                View profile
+              </a>
+
+              <a dropdown-item routerLink="/admin/settings">
+                Settings
+              </a>
+              <a dropdown-item>
+                Integrations
+              </a>
+              <ms-dropdown-item [divider]="true"></ms-dropdown-item>
+              <a dropdown-item logout-btn [routerLink]="logoutRedirectUrl">
+                Sign out
+              </a>
+            </ms-dropdown-menu>
+          </ms-dropdown>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="admin-side-nav">
+    <cp-menu>
+      <cp-menu-list>
+        <ng-container *ngFor="let item of activeSubNav;">
+          <cp-menu-label *ngIf="item.type === 'header'">{{item.label}}</cp-menu-label>
+          <cp-menu-item *ngIf="item.type === 'item'">
+            <a *ngIf="item.path && !item.disabled" [routerLink]="item.path" routerLinkActive="is-active"
+               [routerLinkActiveOptions]="{exact: true}">
+                <span *ngIf="item.icon" class="icon">
+                  <div><i [ngClass]="['fa', 'fa-'+item.icon]"></i></div>
+                </span>
+              <!--<span class="tag is-black">{{item.label}}</span>-->
+              <span class="label">{{item.label}}</span>
+            </a>
+            <a *ngIf="!item.path || item.disabled" disabled>
+                <span *ngIf="item.icon" class="icon">
+                  <div><i [ngClass]="['fa', 'fa-'+item.icon]"></i></div>
+                </span>
+              <!--<span class="tag is-black">{{item.label}}</span>-->
+              <span class="label">{{item.label}}</span>
+            </a>
+          </cp-menu-item>
+          <cp-menu-label *ngIf="item.type === 'divider'" class="divider">{{item.label}}</cp-menu-label>
+        </ng-container>
+      </cp-menu-list>
+    </cp-menu>
+  </div>
+  <ms-sidebar-toggle>
+    <button></button>
+  </ms-sidebar-toggle>
+</ms-sidebar>

@@ -1,0 +1,67 @@
+<div class="level-right">
+  <div class="level-item">
+    <button class="button is-primary">Save</button>
+  </div>
+  <div class="level-item">
+    <button class="button">Cancel</button>
+  </div>
+</div>
+<cp-columns>
+  <cp-column class="is-8">
+    <!-- General Info -->
+    <div class="box">
+      <p class="title is-4">General Info</p>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input *ngIf="product" class="input" type="text" placeholder="Type product name" [value]="product.name">
+          <input *ngIf="!product" class="input" type="text" placeholder="Type product name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Description</label>
+        <div class="control">
+          <textarea *ngIf="product" class="textarea" placeholder="Type product description"
+                    [value]="product.description"></textarea>
+          <textarea *ngIf="!product" class="textarea" placeholder="Type product description"></textarea>
+        </div>
+      </div>
+    </div>
+  </cp-column>
+  <cp-column>
+    <!-- Visibility & Organiztion -->
+    <div class="box">
+      <p class="title is-4">Visibility</p>
+
+      <label class="checkbox">
+        <input *ngIf="product" type="checkbox" [value]="product.isActive">
+        <input *ngIf="!product" type="checkbox">
+        Available
+      </label>
+    </div>
+
+    <div class="box">
+      <p class="title is-4">Organization</p>
+
+      <div class="field">
+        <label class="label">Product Type</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option *ngFor="let type of (productTypes$ | async)"
+                      [id]="type.id">
+                {{type.name}}
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </cp-column>
+</cp-columns>
+<div class="box">
+  <ms-product-attributes [product]="product"></ms-product-attributes>
+</div>
+
+

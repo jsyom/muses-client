@@ -1,0 +1,13 @@
+<div class="admin">
+  <div class="admin-section"
+       [ngClass]="{'is-fullscreen': ((route$ | async) === loginUrl)}">
+    <ms-admin-sidebar [hidden]="!(token$ | async)"
+                      class="admin-nav"
+                      [logoutRedirectUrl]="loginUrl"></ms-admin-sidebar>
+    <div class="admin-content">
+      <!--<div [hidden]="((route$ | async) === loginUrl)">-->
+        <router-outlet></router-outlet>
+      <!--</div>-->
+    </div>
+  </div>
+</div>

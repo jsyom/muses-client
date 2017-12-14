@@ -1,0 +1,40 @@
+<div class="level-right">
+  <div class="level-item">
+    <button class="button" routerLink="/admin/products/new">Create New</button>
+  </div>
+</div>
+
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Label</th>
+    <th>Attributes</th>
+    <th>Active</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of (products$ | async)">
+    <th>{{product.id}}</th>
+    <td>
+      <div>
+        <a class="has-text-info" [routerLink]="['../', 'edit', product.id]">{{product.name}}</a>
+      </div>
+      <div>
+        <span>{{product.description}}</span>
+      </div>
+    </td>
+    <td>
+      <div *ngFor="let attribute of product.attributeValues" class="level">
+        <!--<cp-columns *ngFor="let attribute of product.attributeValues">-->
+          <!--<cp-column>{{attribute.name}}</cp-column>-->
+          <!--<cp-column>${{attribute.productSKU.price}}</cp-column>-->
+        <!--</cp-columns>-->
+        <div class="level-item">{{attribute.name}}</div>
+        <div class="level-item">{{attribute.productSKU.price | currency: 'USD' : 'symbol-narrow':'1.2-2'}}</div>
+      </div>
+    </td>
+    <td>{{product.isActive}}</td>
+  </tr>
+  </tbody>
+</table>

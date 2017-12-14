@@ -1,0 +1,127 @@
+<section id="splash" class="is-transparent">
+  <div>
+    <div class="hero is-large intro is-transparent">
+      <!--<div class="overlay-block"></div>-->
+      <!--<div class="overlay-line"></div>-->
+      <!--<div parallax [config]="{initialValue: -100, ratio: .7}"></div>-->
+      <ms-logo [width]="200"></ms-logo>
+      <ms-discoball></ms-discoball>
+      <div class="left">
+
+      </div>
+      <div class="right">
+        <ul class="share">
+          <li class="mail">
+            <a href="mailto:milowebmaster@gmail.com">
+              <!--<svg class="in">-->
+                <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-mail"></use>-->
+              <!--</svg>-->
+
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <li data-share-twitter="" data-share-url="https://www.thiswaslouisesphone.com" data-share-text="I just discovered what it's like to experience the hell of #CYBERBULLYING. Find out for yourself and join the fight." data-share-hashtags="" class="twitter">
+            <svg class="in">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-twitter"></use>
+            </svg>
+          </li>
+          <li data-share-facebook="" data-share-url="https://www.thiswaslouisesphone.com" class="facebook">
+            <svg class="in">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-facebook"></use>
+            </svg>
+          </li>
+          <li class="sound">
+            <svg class="in">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-sound"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+
+
+      <a class="" id="scrolldown">
+        <span></span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="events" class="section is-transparent">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification metal linear">
+              <p class="title">Grand Opening!</p>
+              <p class="subtitle">blah blah blah</p>
+              <ms-twitter-timeline [dataSrc]="{
+                                     sourceType: 'profile',
+                                     screenName: 'omiologic'
+                                   }"
+                                   data-chrome="noheader transparent nofooter nofooter noborders"
+                                   [opts]="{tweetLimit: 2}"></ms-twitter-timeline>
+              <!--<a class="twitter-timeline" href="https://twitter.com/omiologic?ref_src=twsrc%5Etfw" data-width="300"-->
+                 <!--data-height="300">-->
+                <!--Tweets by omiologic-->
+              <!--</a>-->
+              <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+            </article>
+            <article class="tile is-child notification metal linear">
+              <p class="title">Join </p>
+              <p class="subtitle">Bottom tile</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification metal linear">
+              <p class="title">Middle tile</p>
+              <p class="subtitle">With an image</p>
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/640x480.png">
+              </figure>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification metal linear">
+            <p class="title">Wide tile</p>
+            <p class="subtitle">Aligned with the right tile</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification metal linear">
+          <div class="content">
+            <p class="title">Tall tile</p>
+            <p class="subtitle">With even more content</p>
+            <div class="content">
+              <agm-map [maxZoom]="16" [minZoom]="12" [zoom]="14" [draggable]="false" [latitude]="40.7518144" [longitude]="-73.9937126" [styles]="mapStyle">
+                <agm-marker [latitude]="40.7518144" [longitude]="-73.9937126"></agm-marker>
+              </agm-map>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section is-transparent">
+  <div class="container">
+
+    <!--<div class="columns">-->
+      <!--<div class="column">-->
+        <!--<agm-map [maxZoom]="16" [minZoom]="12" [zoom]="14" [draggable]="false" [latitude]="40.7518144" [longitude]="-73.9937126" [styles]="mapStyle">-->
+          <!--<agm-marker [latitude]="40.7518144" [longitude]="-73.9937126"></agm-marker>-->
+        <!--</agm-map>-->
+      <!--</div>-->
+      <!--<div class="column">-->
+        <!--<h1 class="title">Contact</h1>-->
+        <!--<h2 class="subtitle">-->
+          <!--A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading-->
+        <!--</h2>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+</section>

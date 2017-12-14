@@ -1,0 +1,24 @@
+
+
+/*
+ * Extra Modifiers
+ * written in bulma.io syntax style,
+ */
+
+.is-fullscreen {
+  //height: 100vh !important;
+}
+
+/* conflict with bulma */
+.is-fullwidth, .is-fullscreen {
+  //padding: 0px !important;
+  //margin: 0 !important;
+  //width: 100vw !important;
+
+  .container, .hero {
+    height: inherit;
+  }
+}
+
+
+

@@ -1,0 +1,99 @@
+<!-- Left Sidebar -->
+<!--<ms-sidebar side="left" [config]="{'fullscreen': true}">
+  <ms-menus>
+
+  </ms-menus>
+  <ms-sidebar-close>
+    close menu
+    <i class="fa fa-times-circle"></i>
+  </ms-sidebar-close>
+  <ms-sidebar-toggle>
+    <span>MENU</span>
+    <div class="toggle-arrow"></div>
+  </ms-sidebar-toggle>
+</ms-sidebar>-->
+
+<!-- Right Sidebar -->
+<!--<ms-sidebar side="right">
+  <div>
+    <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=857110&domain=com&type=standard&theme=tall&lang=en-US&overlay=false'></script>
+  </div>
+  <ms-sidebar-close>
+    close menu
+    <i class="fa fa-times-circle"></i>
+  </ms-sidebar-close>
+  <ms-sidebar-toggle>
+    <span>RSVP</span>
+    <div class="toggle-arrow"></div>
+  </ms-sidebar-toggle>
+</ms-sidebar>-->
+
+
+
+<!-- Client Content -->
+<div class="client-content">
+
+  <ms-navbar class="is-transparent">
+    <ms-navbar-menu>
+      <ms-navbar-menu-group position="center">
+        <a class="navbar-item" routerLink="/">
+          Menu
+        </a>
+        <a class="navbar-item" routerLink="/">
+          Events
+        </a>
+        <a class="navbar-item" routerLink="/">
+          Rooms
+        </a>
+        <a class="navbar-item" routerLink="/">
+          Reservation
+        </a>
+        <a class="navbar-item" routerLink="/">
+          Contact
+        </a>
+      </ms-navbar-menu-group>
+    </ms-navbar-menu>
+  </ms-navbar>
+
+  <router-outlet></router-outlet>
+  <section class="content-footer">
+    <div class="level">
+      <div class="level-item">
+        <ms-logo [width]="200"></ms-logo>
+      </div>
+      <div class="level-item">
+        All rights reserved to muses karaoke 2017
+      </div>
+      <div class="level-item">
+        Powered by omiologic
+      </div>
+    </div>
+    <div class="container" hidden="true">
+      <div class="columns">
+        <div class="column">
+          <ms-logo [width]="200"></ms-logo>
+        </div>
+        <div class="column">
+          <p class="title is-6">LOCATION & HOURS</p>
+          <p class="subtitle is-6">
+            500 35th Street<br />
+            New York, NY 10001<br />
+            <br />
+            Mon - Sun: 5 pm - 2 am
+          </p>
+          <p class="title is-6">RESERVATIONS</p>
+          <p class="subtitle is-6">
+            We take reservations<br />
+            until 8pm. Call +01 123 456 7890<br />
+          </p>
+          <p class="title is-6">CAREERS</p>
+          <p class="subtitle is-6">
+            Should you wish to join our team<br />
+            Contact us at museseny@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>

@@ -1,0 +1,10 @@
+ms-login {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: hsl(0, 0%, 86%);
+  >.box {
+    width: 320px;
+  }
+}

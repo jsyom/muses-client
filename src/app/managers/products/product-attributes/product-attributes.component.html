@@ -1,0 +1,37 @@
+<p class="title is-4">Attributes</p>
+<p class="subtitle is-6">Does this product come in multiple variations like size or color?</p>
+<div class="level-right">
+  <div class="level-item">
+    <button class="button">Add attribute</button>
+  </div>
+</div>
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Price</th>
+      <th>SKU</th>
+      <th>Qty</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="product">
+      <tr *ngFor="let attribute of product.attributeValues">
+        <td>
+          <ng-container *ngIf="attribute.name">{{attribute.name}}</ng-container>
+          <ng-container *ngIf="!attribute.name">Default</ng-container>
+        </td>
+        <td>{{attribute.productSKU.price}}</td>
+        <td>{{attribute.productSKU.sku}}</td>
+        <td>{{attribute.productSKU.quantity}}</td>
+        <td>
+          <div class="buttons has-addons level-right">
+            <span class="button">Edit</span>
+            <span class="button">Delete</span>
+          </div>
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

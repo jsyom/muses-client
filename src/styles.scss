@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/styles/dark.theme";
+
+.is-transparent {
+  background-color: transparent;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #FFFFFF !important;
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
+
+.columns, .tile.is-ancestor {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a[disabled] {
+  cursor: not-allowed !important;
+}

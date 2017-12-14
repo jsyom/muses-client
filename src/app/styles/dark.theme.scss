@@ -1,0 +1,30 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+.is-dark {
+  background: $black-ter;
+  .title {
+    color: $white-bis;
+  }
+  .subtitle {
+    color: $white;
+  }
+
+  .navbar-item, .navbar-link {
+    color: $white-ter;
+  }
+
+  .navbar-dropdown .navbar-item {
+    color: $black-ter;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .navbar-item.has-dropdown:hover .navbar-link,
+    .navbar-item.has-dropdown.is-active .navbar-link {
+      background-color: $grey-darker;
+    }
+  }
+
+
+
+}
+

@@ -1,0 +1,14 @@
+id,name,description,parentId,order
+1,Food,Category for food menu,,1
+2,Drinks,Category for drinks menu,,2
+3,Packages,Category for grouped menu,,3
+4,Cocktail,Cocktail menu,2,1
+5,Beer,Beer menu,2,2
+6,Soju,Soju menu,2,3
+7,Appetizers,Appetizers menu,1,1
+8,Snacks,Finger foods,1,2
+9,Soft Drink,soft drinks menu,2,10
+10,Room,Rooms,,4
+11,Sprits,Whiskey menu,2,4
+12,Whiskey,Whiskey,11,1
+13,Single Malt,Single Malt,11,2
